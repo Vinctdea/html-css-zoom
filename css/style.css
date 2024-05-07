@@ -17,6 +17,7 @@ header{
     background-color: black;
     position: fixed;
     top: 0;
+    z-index: 50;
 }
 
 #cmd-top{
@@ -47,7 +48,7 @@ main{
 }
 
 .container{
-    padding: 0 2%;
+    padding:  2%;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -58,9 +59,21 @@ main{
 }
 
 .box-webcam{
-    height: 150px;
-    min-width: 200px;
-    /* debug */
-    background-color: chocolate;
+    min-height: 150px;
+    width: calc((100% / 7) - 10px);
+    position: relative;    
 }
 
+.box-webcam img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.label-nome{
+    background-color: grey;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
