@@ -48,42 +48,42 @@ main{
 }
 
 .container{
-    padding:  2%;
+    padding:  10px;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    gap: 5px;
+    gap: 2px;
     overflow-y: auto;
 }
 
 .box-webcam{
-    min-height: 150px;
-    width: calc((100% / 7) - 10px);
+    min-width: 150px;
+    width: calc((100% / 7) - 4px);
     position: relative;    
 }
 
 .box-webcam img{
     max-width: 100%;
     max-height: 100%;
-    min-width: calc((100% / 7) - 10px);
-    object-fit: cover;
+   
 }
 
 .label-nome{
+    font-size: 10px;
     background-color: grey;
     color: white;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 5px;
 }
 
 /* regole footer */
 
 footer{
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-color: rgb(46, 45, 45);
     position: fixed;
     bottom: 0;
@@ -99,7 +99,7 @@ footer{
     display: flex;
     align-items: center;
     padding: 1%;
-    font-size: 20px;
+    font-size: 15px;
     gap: 10px;
 }
 
