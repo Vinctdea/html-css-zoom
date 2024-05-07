@@ -22,8 +22,7 @@ header{
 #cmd-top{
     text-align: right;
     padding: 10px;
- /* debug */
-    
+     
 }
 
 .fa-solid {
@@ -39,5 +38,29 @@ header{
     border-radius: 5px;
     padding: 3px;
     margin: 0 3px;
+}
+
+/* regole main */
+
+main{
+    background-color: black;  
+}
+
+.container{
+    padding: 0 2%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    overflow-y: auto;
+}
+
+.box-webcam{
+    height: 150px;
+    min-width: 200px;
+    /* debug */
+    background-color: chocolate;
 }
 
